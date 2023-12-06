@@ -28,6 +28,22 @@ namespace Taschenrechner.Tests
         }
 
         [TestMethod()]
+        public void SummierenTest2()
+        {
+            ///AAA
+            //Arrange
+            int ersteZahl = 5;
+            int zweiteZahl = -10;
+            int expected = -5;
+
+            //Act
+            int actual = Mathe.Summieren(ersteZahl, zweiteZahl);
+
+            //Assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod()]
         public void SubtrahierenTest()
         {
             ///AAA
